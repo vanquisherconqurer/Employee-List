@@ -3,16 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmployeeTableComponent } from './employee-table/employee-table.component';
+import  { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    EmployeeDetailComponent,
+    EmployeeTableComponent,
+],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+  
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
